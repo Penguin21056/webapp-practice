@@ -60,5 +60,5 @@ try {
     }
 
     error_log((string) $error);
-    finish('บันทึกไม่ได้ กรุณาตรวจชื่อฐานข้อมูล รหัสผ่าน และบริการ MySQL');
+    finish('ข้อผิดพลาด ' . $error->getCode() . ' : ' . $error->getMessage());
 }
